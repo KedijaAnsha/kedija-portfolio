@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedija Ansha - CV</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.5; padding: 30px 20px; }
+        .cv-wrapper { max-width: 850px; margin: 0 auto; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; display: flex; }
+        
+        /* Sidebar */
+        .cv-sidebar { width: 32%; background: #0B1F3A; color: #fff; padding: 40px 25px; }
+        .cv-sidebar h1 { font-size: 24px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px; line-height: 1.2; }
+        .cv-sidebar h2 { font-size: 13px; font-weight: 400; color: #a0aec0; margin-bottom: 30px; }
+        .cv-sidebar h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 5px; margin: 25px 0 15px; color: #63b3ed; }
+        .cv-sidebar p, .cv-sidebar li { font-size: 12px; color: #cbd5e0; margin-bottom: 8px; }
+        .cv-sidebar ul { list-style: none; }
+        .cv-sidebar .contact-info p { margin-bottom: 6px; display: flex; align-items: center; }
+        
+        /* Main Content */
+        .cv-main { width: 68%; padding: 40px 35px; }
+        .cv-main h1 { display: none; } /* Hide main title to use sidebar one */
+        .cv-main h2 { font-size: 15px; text-transform: uppercase; letter-spacing: 1px; color: #0B1F3A; border-bottom: 2px solid #63b3ed; padding-bottom: 5px; margin: 20px 0 12px; }
+        .cv-main h2:first-of-type { margin-top: 0; }
+        .cv-main p, .cv-main li { font-size: 13px; color: #4a5568; margin-bottom: 8px; line-height: 1.6; }
+        .cv-main ul { padding-left: 18px; margin-bottom: 15px; }
+        
+        .cv-item { margin-bottom: 15px; }
+        .cv-item-title { font-weight: 700; color: #0B1F3A; font-size: 14px; }
+        .cv-item-subtitle { font-style: italic; color: #718096; font-size: 12px; margin-bottom: 5px; }
+        .cv-item-date { float: right; font-size: 12px; color: #718096; font-weight: 600; }
+
+        /* Print Settings */
+        @media print {
+            body { background: #fff; padding: 0; }
+            .cv-wrapper { box-shadow: none; max-width: 100%; border-radius: 0; }
+            .cv-sidebar { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .cv-main h2 { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-wrapper">
+        <!-- SIDEBAR -->
+        <div class="cv-sidebar">
+            <h1>Kedija Ansha</h1>
+            <h2>Software Engineering Student | Aspiring Full-Stack Developer</h2>
+            
+            <h3>Contact</h3>
+            <div class="contact-info">
+                <p>Shashemene, Ethiopia</p>
+                <p>Anshakedija94@gmail.com</p>
+                <p>+251 98 348 8959</p>
+                <p>github.com/KedijaAnsha</p>
+                <p>youtube.com/@kedijaansha</p>
+            </div>
+            
+            <h3>Technical Skills</h3>
+            <ul>
+                <li><strong>Programming:</strong> Java, C++, JavaScript</li>
+                <li><strong>Frontend:</strong> HTML5, CSS3, React.js</li>
+                <li><strong>Backend:</strong> Node.js, Express.js</li>
+                <li><strong>Databases:</strong> MySQL, MongoDB, SQLite</li>
+                <li><strong>Mobile:</strong> Android Development with Java</li>
+                <li><strong>Tools & Platforms:</strong> Git, GitHub, Docker, Jira, ProjectLibre, Trello, Notion, Duolingo</li>
+            </ul>
+            
+            <h3>Languages</h3>
+            <ul>
+                <li>Afaan Oromo</li>
+                <li>Amharic</li>
+                <li>English</li>
+                <li>Arabic</li>
+                <li>Turkish</li>
+                <li>Chinese (Level One - Learning)</li>
+            </ul>
+        </div>
+        
+        <!-- MAIN CONTENT -->
+        <div class="cv-main">
+            <h2>Professional Summary</h2>
+            <p>A motivated fourth-year Software Engineering student at Wachemo University with practical experience in academic software development, teamwork, and community engagement. Interested in full-stack development, mobile application development, and emerging technologies. A multilingual communicator with a passion for learning, cultural exchange, and using technology to address real-world challenges. Eager to gain professional experience, contribute to collaborative projects, and continue developing technical and interpersonal skills.</p>
+            
+            <h2>Education</h2>
+            <div class="cv-item">
+                <span class="cv-item-date">2022 – Present</span>
+                <div class="cv-item-title">Bachelor of Science in Software Engineering</div>
+                <div class="cv-item-subtitle">Wachemo University, Ethiopia | Fourth-Year Undergraduate Student</div>
+            </div>
+            
+            <h2>Project Experience</h2>
+            <div class="cv-item">
+                <div class="cv-item-title">Distributed Food Delivery System</div>
+                <div class="cv-item-subtitle">Java RMI-based system (coursework)</div>
+                <ul>
+                    <li>Architected a multi-tiered distributed food ordering system leveraging Java Remote Method Invocation (RMI).</li>
+                    <li>Implemented synchronous communication protocols between clients, dispatch servers, and restaurant nodes.</li>
+                    <li>Designed concurrency and state tracking mechanisms to ensure data consistency across distributed workflows.</li>
+                </ul>
+            </div>
+            
+            <div class="cv-item">
+                <div class="cv-item-title">Quizzy – Android Quiz Application</div>
+                <div class="cv-item-subtitle">Group Academic Software Development Project</div>
+                <ul>
+                    <li>Developed an Android quiz application using Java.</li>
+                    <li>Implemented SQLite database functionality for local data management.</li>
+                    <li>Worked with user sessions and guest-mode functionality.</li>
+                    <li>Designed an application for practicing computer science and software engineering questions.</li>
+                </ul>
+            </div>
+            
+            <div class="cv-item">
+                <div class="cv-item-title">Wache-Market – Group Software Project</div>
+                <div class="cv-item-subtitle">Project Manager</div>
+                <ul>
+                    <li>Collaborated with a student development team on a market-related software project.</li>
+                    <li>Coordinated project activities and team responsibilities.</li>
+                    <li>Used Jira and ProjectLibre for project planning and task management.</li>
+                    <li>Worked alongside team members responsible for backend development, frontend development, and quality assurance.</li>
+                </ul>
+            </div>
+            
+            <h2>Volunteering & Community Engagement</h2>
+            <div class="cv-item">
+                <span class="cv-item-date">December 2025</span>
+                <div class="cv-item-title">Volunteer Translation Support</div>
+                <div class="cv-item-subtitle">Oda Hulle General Hospital</div>
+                <p>Contributed volunteer translation support to facilitate communication with visitors.</p>
+            </div>
+            
+            <div class="cv-item">
+                <span class="cv-item-date">August 14–15, 2026</span>
+                <div class="cv-item-title">Addis Reading Festival Volunteer</div>
+                <div class="cv-item-subtitle">Organization for Learning and Development (OFLAD-NGO)</div>
+                <p>Supported a children's reading and educational experience, contributing to a community initiative promoting reading and learning.</p>
+            </div>
+            
+            <h2>International Participation</h2>
+            <div class="cv-item">
+                <span class="cv-item-date">December 5–6, 2025</span>
+                <div class="cv-item-title">5th Istanbul Education Summit</div>
+                <div class="cv-item-subtitle">Türkiye Maarif Foundation</div>
+                <p>Participated in an international education summit. Received a certificate of participation.</p>
+            </div>
+            
+            <h2>Certifications & Recognition</h2>
+            <ul>
+                <li>Chinese Language Level One Certificate — Ni Hao ሐበሻ Language School</li>
+                <li>Certificate of Appreciation — OFLAD-NGO, Addis Reading Festival, 2026</li>
+                <li>Volunteer Translation Support Certificate — Oda Hulle General Hospital, 2025</li>
+                <li>Certificate of Participation — 5th Istanbul Education Summit, 2025</li>
+                <li>School Extracurricular Participation Certificates — Science and Technology Club, Voluntary Club, Library Club, English Language Club</li>
+            </ul>
+            
+            <h2>Interests</h2>
+            <p>Software development, technology innovation, language learning, cultural exchange, reading, and community service.</p>
+        </div>
+    </div>
+</body>
+</html>
