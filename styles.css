@@ -1,5 +1,5 @@
 /* ==========================================================================
-   PORTFOLIO STYLES - KEDIJA ANSHA
+   PORTFOLIO STYLES - KEDIJA ANSHA (FULL AND COMPLETE)
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
@@ -319,7 +319,6 @@ header.scrolled {
 .hero-backdrop {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80'); /* Fallback image */
     background-size: cover;
     background-position: center bottom;
     transform: scale(1.02);
@@ -675,7 +674,7 @@ header.scrolled {
 .timeline-summary { font-size: 0.95rem; color: var(--text-muted); line-height: 1.65; }
 
 /* --------------------------------------------------------------------------
-   11. Hire Me / Scenario Section (NEW)
+   11. Hire Me / Scenario Section
    -------------------------------------------------------------------------- */
 .hire-grid {
     display: grid;
@@ -786,4 +785,116 @@ header.scrolled {
     color: var(--text-white); font-size: 1.1rem; text-decoration: none;
     transition: var(--transition-smooth);
 }
-.social-icons-row a:hover
+.social-icons-row a:hover { background: rgba(34, 211, 238, 0.2); border-color: var(--primary-cyan); color: var(--primary-cyan); transform: translateY(-3px); }
+
+.cv-highlight-banner {
+    display: flex; align-items: center; gap: 16px;
+    padding: 16px; border-radius: 10px;
+    background: linear-gradient(135deg, rgba(11, 31, 58, 0.9), rgba(15, 23, 42, 0.9));
+    border: 1px solid rgba(56, 189, 248, 0.3);
+}
+.cv-highlight-banner > i { font-size: 1.8rem; color: var(--primary-cyan); }
+.cv-highlight-banner h4 { font-size: 0.9rem; font-weight: 700; color: #FFFFFF; }
+.cv-highlight-banner p { font-size: 0.78rem; color: var(--text-muted); }
+
+.styled-form { display: flex; flex-direction: column; gap: 18px; }
+.form-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group label { font-size: 0.85rem; font-weight: 600; color: var(--text-muted); }
+.form-group label .required { color: #F43F5E; }
+.form-group input, .form-group textarea {
+    width: 100%; padding: 13px 16px;
+    background: rgba(8, 14, 26, 0.6);
+    border: 1px solid var(--border-glass); border-radius: 8px;
+    color: var(--text-white); font-family: inherit; font-size: 0.95rem;
+    transition: var(--transition-smooth);
+}
+.form-group input:focus, .form-group textarea:focus {
+    outline: none; border-color: var(--primary-cyan);
+    background: rgba(8, 14, 26, 0.9); box-shadow: 0 0 16px rgba(34, 211, 238, 0.15);
+}
+.btn-submit { align-self: flex-start; padding: 12px 30px; }
+
+/* --------------------------------------------------------------------------
+   13. Footer
+   -------------------------------------------------------------------------- */
+.site-footer { background-color: #050911; border-top: 1px solid var(--border-glass); padding: 50px 0 35px; }
+.footer-content { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px; }
+.footer-brand p { font-size: 0.9rem; color: var(--text-muted); margin-top: 6px; }
+.footer-links { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
+.footer-links a { color: var(--text-muted); font-size: 0.88rem; font-weight: 500; text-decoration: none; transition: color 0.2s ease; }
+.footer-links a:hover { color: var(--primary-cyan); }
+.footer-copyright { margin-top: 10px; font-size: 0.82rem; color: var(--text-dim); line-height: 1.5; }
+
+.back-to-top {
+    position: fixed; bottom: 28px; right: 28px; width: 44px; height: 44px;
+    border-radius: 50%; background: var(--bg-card); border: 1px solid var(--border-glass);
+    color: var(--text-white); font-size: 1rem; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; visibility: hidden; transition: var(--transition-smooth); z-index: 999;
+}
+.back-to-top.visible { opacity: 1; visibility: visible; }
+.back-to-top:hover { background: var(--primary-teal); color: #FFFFFF; border-color: var(--primary-teal); transform: translateY(-3px); box-shadow: 0 4px 18px rgba(20, 184, 166, 0.4); }
+
+/* --------------------------------------------------------------------------
+   14. Animations
+   -------------------------------------------------------------------------- */
+@keyframes fadeInDown { from { opacity: 0; transform: translateY(-24px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+
+/* --------------------------------------------------------------------------
+   15. Responsive Queries (Mobile & Tablet)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+    .projects-grid, .experience-grid { grid-template-columns: repeat(2, 1fr); }
+    .about-grid { grid-template-columns: 1fr; }
+    .hire-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .section { padding: 70px 0; }
+    .hero-heading { font-size: 2.3rem; }
+    .hero-subtitle-box { font-size: 0.95rem; letter-spacing: 1.5px; }
+    
+    /* Mobile Menu Drawer */
+    .menu-toggle { display: flex; }
+    
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: rgba(8, 14, 26, 0.98);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        transition: 0.4s ease-in-out;
+        border-bottom: 1px solid var(--border-glass);
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 40px;
+    }
+
+    .nav-menu.open { left: 0; }
+
+    .nav-links {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .nav-link { font-size: 1.1rem; letter-spacing: 2px; }
+
+    /* Grids become single column */
+    .skills-grid, .projects-grid, .experience-grid, .cert-grid, .contact-layout, .hire-grid { 
+        grid-template-columns: 1fr; 
+    }
+    
+    .full-width-cert { grid-column: span 1; }
+    .form-row { grid-template-columns: 1fr; }
+    .quick-facts-grid { grid-template-columns: 1fr; }
+    .timeline-node { flex-direction: column; padding: 26px; }
+}
