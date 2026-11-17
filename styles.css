@@ -179,7 +179,7 @@ body {
     transform: translateY(-2px);
 }
 
-.btn-sm { padding: 7px 16px; font-size: 0.85rem; border-radius: 6px; }
+.btn-sm { padding: 8px 16px; font-size: 0.85rem; border-radius: 6px; }
 
 /* --------------------------------------------------------------------------
    3. Header & Navigation
@@ -679,11 +679,11 @@ header.scrolled {
 .hire-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 16px; /* Reduced gap to fit 4 cards */
 }
 
 .hire-card {
-    padding: 34px;
+    padding: 24px 20px; /* Reduced padding to fit content */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -695,58 +695,63 @@ header.scrolled {
 }
 
 .hire-icon {
-    width: 54px;
-    height: 54px;
-    border-radius: 14px;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
     background: rgba(20, 184, 166, 0.15);
     border: 1px solid rgba(20, 184, 166, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--primary-cyan);
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+    font-size: 1.3rem;
+    margin-bottom: 16px;
 }
 
 .hire-card h3 {
     font-family: var(--font-heading);
-    font-size: 1.35rem;
+    font-size: 1.15rem; /* Reduced slightly */
     color: var(--text-white);
     margin-bottom: 10px;
+    line-height: 1.3;
 }
 
 .hire-card p {
-    font-size: 0.92rem;
+    font-size: 0.85rem; /* Reduced slightly */
     color: var(--text-muted);
-    margin-bottom: 20px;
-    line-height: 1.6;
+    margin-bottom: 16px;
+    line-height: 1.5;
 }
 
 .hire-list {
     list-style: none;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     padding-left: 0;
 }
 
 .hire-list li {
-    font-size: 0.88rem;
+    font-size: 0.82rem; /* Reduced slightly */
     color: var(--text-white);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 8px;
+    line-height: 1.4;
 }
 
 .hire-list li i {
     color: var(--primary-teal);
-    font-size: 1rem;
+    font-size: 0.95rem;
+    margin-top: 2px;
 }
 
 .hire-card .btn {
     margin-top: auto;
     width: 100%;
+    padding: 10px 15px;
+    font-size: 0.85rem;
 }
 
 /* --------------------------------------------------------------------------
@@ -848,7 +853,7 @@ header.scrolled {
 @media (max-width: 1024px) {
     .projects-grid, .experience-grid { grid-template-columns: repeat(2, 1fr); }
     .about-grid { grid-template-columns: 1fr; }
-    .hire-grid { grid-template-columns: repeat(2, 1fr); }
+    .hire-grid { grid-template-columns: repeat(2, 1fr); } /* 2x2 grid on tablets */
 }
 
 @media (max-width: 768px) {
